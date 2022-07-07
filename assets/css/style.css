@@ -45,6 +45,7 @@
 }
 
 .titulo {
+    margin-left: -100px;
     color: #021e47;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -63,12 +64,30 @@
     border-radius: 1rem 0 0 1rem;
 }
 
+.campo[disabled] {
+    background-color: #d2d2d2;
+}
+
+.select {
+    width: 30% !important;
+    border-radius: 0 1rem 1rem 0 !important;
+}
+
 select {
     width: 30%;
     border-radius: 0 1rem 1rem 0;
 }
 
+.disabled {
+    background-color: #d2d2d2;
+}
+
 .grupo-campos {
+    margin-left: -100px;
     width: 50%;
     display: flex;
+}
+
+.right img {
+    margin-left: -100px;
 }

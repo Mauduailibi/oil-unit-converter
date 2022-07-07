@@ -21,28 +21,26 @@
             <h1 class="titulo">Conversor de unidades de petróleo</h1>
 
             <div class="grupo-campos">
-                <input type="number" min="0" class="campo" />
-                <select class="">
-                    <option value="">BBL</option>
-                    <option value="">Litros</option>
+                <input id="valor" type="number" min="0" class="campo" onkeyup="onChangeValor()" />
+                <select id="unidade" onchange="onChangeUnidade()">
+                    <option value="BBL">BBL</option>
+                    <option value="Litros">Litros</option>
+                    <option value="m3">m³</option>
                 </select>
             </div>
             
-
             <img src="assets/images/arrows-svgrepo-com.svg" width="5%" />
 
             <div class="grupo-campos">
-                <input type="number" min="0" class="campo" />
-                <select class="">
-                    <option value="">Litros</option>
-                    <option value="">BBL</option>
-                </select>
+                <input id="valor-convertido" type="number" min="0" class="campo" disabled />
+                <div id="unidade-convertida" class="campo select disabled">Litros</div>
             </div>
         </div>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
